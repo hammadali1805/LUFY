@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Document Summarizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="form-container">
+        <div class="head">
+
+            <h1>LUFY</h1>
+            <select id="languageSelect">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="ta">Tamil</option>
+                <option value="te">Telugu</option>
+                <option value="bn">Bengali</option>
+                <option value="mr">Marathi</option>
+                <option value="as">Assamese</option>
+                <option value="gu">Gujarati</option>
+                <option value="kn">Kannada</option>
+                <option value="ks">Kashmiri</option>
+                <option value="ml">Malayalam</option>
+                <option value="or">Odia</option>
+                <option value="pa">Punjabi</option>
+                <option value="sa">Sanskrit</option>
+                <option value="sd">Sindhi</option>
+                <option value="ur">Urdu</option>
+                <!-- Add more languages as needed -->
+            </select>
+        </div>
+        <form id="upload-form">
+            <textarea id="text-input" placeholder="Enter your text here..."></textarea>
+            <h3>OR</h3>
+            <input type="file" id="file-input" accept=".txt,.pdf,.doc,.docx">
+            <br>
+            <br>
+            <button class="main-button"  type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="container" id="processing-container" style="display: none;">
+        <h1>Summarizing...</h1>
+        <!-- <div class="spinner"></div> -->
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+        <dotlottie-player class="summarize-animation" src="https://lottie.host/077da852-a757-456f-91e4-f0c10770930e/jPmdfOGXES.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+    </div>
+
+    <div class="container" id="response-container" style="display: none;">
+        <h1>Summary</h1>
+        <p id="response-text"></p>
+        <button class="main-button" onclick="goBack()">Go Back</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
