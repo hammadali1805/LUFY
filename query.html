@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Document Summarizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="form-container">
+        <div class="head">
+
+            <h1>LUFY</h1>
+            <select id="languageSelect">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="ta">Tamil</option>
+                <option value="te">Telugu</option>
+                <option value="bn">Bengali</option>
+                <option value="mr">Marathi</option>
+                <option value="as">Assamese</option>
+                <option value="gu">Gujarati</option>
+                <option value="kn">Kannada</option>
+                <option value="ks">Kashmiri</option>
+                <option value="ml">Malayalam</option>
+                <option value="or">Odia</option>
+                <option value="pa">Punjabi</option>
+                <option value="sa">Sanskrit</option>
+                <option value="sd">Sindhi</option>
+                <option value="ur">Urdu</option>
+                <!-- Add more languages as needed -->
+            </select>
+            <button class="back-button" onclick="goBack()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 32 32">
+
+                    <defs>
+                                        
+                    </defs>
+                    
+                    <g data-name="arrow left" id="arrow_left">
+                    
+                    <path class="cls-1" d="M22,29.73a1,1,0,0,1-.71-.29L9.93,18.12a3,3,0,0,1,0-4.24L21.24,2.56A1,1,0,1,1,22.66,4L11.34,15.29a1,1,0,0,0,0,1.42L22.66,28a1,1,0,0,1,0,1.42A1,1,0,0,1,22,29.73Z"/>
+                    
+                    </g>
+                    
+                    </svg>
+            </button>
+
+        </div>
+
+
+        <div class="chat-container">
+            <div class="chat-window" id="chat-window">
+                <!-- Chat messages will be appended here -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input" placeholder="Ask your query here ...">
+                <button id="send-button">></button>
+            </div>
+        </div>
+
+            
+        
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="chat_scripts.js"></script>
+</body>
+</html>
