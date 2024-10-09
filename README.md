@@ -71,7 +71,7 @@ Make sure you have the following installed:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/your-username/LUFY.git
-   cd lufy
+   cd LUFY
    ```
 
 2. **Install the Required Libraries**:
